@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Restaurant Feedback Form</title>
+    <script src="script.js" defer></script>
+
+  </head>
+  <body>
+    <h1 id="title">Restaurant Feedback Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="https://formsubmit.co/abhishektiwari29@email.com" method="POST" />      <fieldset>
+        <label id="name-label"> Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label"> Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="Phone-label"> Mobile number<input id="phone" type="number" placeholder="Enter your mobile number" required /></label>
+        <label id="number-label"> Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Enter your Age" /  ></label>
+        <label id="Date-label"> Date of your visit<input id="date" type="date" placeholder="Enter your mobile number" required /></label>
+
+        <!-- <div class="rating-box">
+            <header>How was your experience?</header>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+        </div> -->
+
+        <!-- <label> Which option best describes your current role
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label> -->
+      </fieldset>
+      <fieldset>
+        <label> How would you rate your overall experience at the restaurant?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Excellent</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Good</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Average</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Poor</label>
+      </fieldset>
+      <fieldset>
+      <label> How would you rate the quality and taste of the food?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked/> Excellent</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Good</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Average</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Poor</label>
+      </fieldset>
+      <fieldset>
+        <label> Would you recommend our restaurant to a friend?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+      </fieldset>
+      <!-- <fieldset>
+        <label> What is your favorite feature of freeCodeCamp?
+          <select id="dropdown2">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label>
+      </fieldset> -->
+      <fieldset>
+        <label> How did you hear about our restaurant? <small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="Online Search" /> Online Search</label>
+        <label><input type="checkbox" class="inline" value="Social Media" /> Social Media</label>
+        <label><input type="checkbox" class="inline" value="Word of Mouth" /> Word of Mouth</label>
+        <label><input type="checkbox" class="inline" value="Print Advertisement" /> Print Advertisement</label>
+        <label><input type="checkbox" class="inline" value="Website" /> Website</label>
+        <label><input type="checkbox" class="inline" value="Other " /> Other</label>
+        <!-- <label><input type="checkbox" class="inline" value="videos" /> Videos</label>
+        <label><input type="checkbox" class="inline" value="city-meetups" /> City Meetups</label>
+        <label><input type="checkbox" class="inline" value="wiki" /> Wiki</label>
+        <label><input type="checkbox" class="inline" value="forum" /> Forum</label>
+        <label><input type="checkbox" class="inline" value="additional-courses" /> Additional Courses</label> -->
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+    <small>This Feedback form was developed by <a href="https://www.linkedin.com/in/abhishek-tiwari-816a87227/" target="_blank">@abhishektiwari</a> </small>
+  </body>
+</html>
